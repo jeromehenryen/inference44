@@ -1,0 +1,8 @@
+{
+  "name": "mission-inferences",
+  "private": true,
+  "description": "Mission Inférences – défis de lecture (inférences)",
+  "dependencies": {
+    "@upstash/redis": "^1.34.0"
+  }
+}
