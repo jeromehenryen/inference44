@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mission Inférences – lancer</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px;background:#f6f8fc;color:#202b46;font-family:Nunito,"Segoe UI",system-ui,Arial,sans-serif}
+  .card{width:100%;max-width:460px;background:#fff;border-radius:22px;padding:26px 24px;text-align:center;box-shadow:0 12px 35px rgba(35,52,91,.12)}
+  .mark{width:54px;height:54px;border-radius:16px;background:#3559d8;color:#fff;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+  h1{margin:0 0 4px;font-size:26px}
+  .sub{margin:0 0 18px;color:#65718a;font-size:14px}
+  .go{display:block;background:#3559d8;color:#fff;text-decoration:none;font-weight:800;font-size:18px;padding:16px 18px;border-radius:14px}
+  .go:hover,.go:focus{background:#2a47b3}
+  .note{margin:16px 0 0;color:#65718a;font-size:13px;line-height:1.5}
+  code{background:#eef2fb;border-radius:6px;padding:2px 6px;word-break:break-all}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="mark" aria-hidden="true">MI</div>
+  <h1>Mission Inférences</h1>
+  <p class="sub">Défis de lecture · Cycles 2 et 3</p>
+  <a class="go" id="go" href="./?embed=0" target="_blank" rel="noopener">Commencer les défis ↗</a>
+  <p class="note">L’application s’ouvre sur toute la page, dans un nouvel onglet, pour une lecture plus confortable.<br>
+  Si rien ne s’ouvre, copie cette adresse dans ton navigateur :<br><code id="addr"></code></p>
+</main>
+<script>
+  var url = location.origin + '/?embed=0';
+  document.getElementById('go').href = url;
+  document.getElementById('addr').textContent = url;
+</script>
+</body>
+</html>
